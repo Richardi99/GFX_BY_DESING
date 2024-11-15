@@ -1,0 +1,80 @@
+@import './variables.css';
+
+header {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2.5rem;
+}
+
+header .header-logo img{
+  max-width: 180px;
+  height: auto;
+  padding-top: 10px;
+  align-items: center;
+}
+
+header nav ul{
+  display: flex;
+  list-style: none;
+}
+
+header nav ul a {
+  font-size: clamp(1.4rem, 1.4vw, 1.9rem);
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #151515;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  display: inline-block; /* Ajusta el ancho solo al tamaño del texto */
+  padding: 10px 0; /* Aplica padding solo en la parte superior e inferior, no en los lados */
+  margin-right: 50px;
+}
+
+/* Subrayado */
+header nav ul a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 3px;
+  width: 0; /* Empieza con ancho 0 */
+  background-color: var(--color-celeste);
+  transform: translateX(-50%) scaleX(0); /* Ajuste del centro y el inicio de la animación */
+  transition: transform 0.3s ease, width 0.3s ease; /* Agrega transición para el ancho también */
+}
+
+/* Mostrar subrayado en hover o si está activo */
+header nav ul a:hover::after,
+header nav ul a.active::after {
+  transform: translateX(-50%) scaleX(1); /* Animación de subrayado */
+  width: 100%; /* Expande el subrayado solo al tamaño del texto */
+  background-color: var(--color-celeste);
+}
+
+/* Estilos para el quinto enlace */
+header nav ul li:nth-child(5) a {
+  color: white;
+  font-weight: bold;
+  background-color: #131313;
+  border-radius: 10px;
+  padding: 10px 20px;
+  animation: pulse 1s infinite;
+  /* Aquí eliminamos la animación de subrayado */
+  text-decoration: none; /* Aseguramos que no tenga subrayado por defecto */
+}
+
+header nav ul li:nth-child(5) a::after {
+  /* Eliminamos el subrayado */
+  content: none; /* Esto desactiva el pseudoelemento ::after para el quinto enlace */
+}
+/* Animación de pulsación */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+

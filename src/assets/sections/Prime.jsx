@@ -5,7 +5,7 @@ function Prime() {
   return (
     <>
       <Helmet>
-        <title>GFX - Building Brands with Purpose</title>
+        <title>GFX BY DESIGN</title>
         <meta name='description' content='Your partner in transforming ideas into stunning visuals.' />
       </Helmet>
       <div className='Prime-contailer'>
