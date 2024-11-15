@@ -1,4 +1,4 @@
-@import './variables.css';
+@import '../styles/Variables.css';
 
 header {
   box-sizing: border-box;
