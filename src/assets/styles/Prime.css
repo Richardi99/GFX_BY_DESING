@@ -1,0 +1,46 @@
+.Prime-contailer {
+  box-sizing: border-box;
+  margin-left: 5rem;
+}
+
+h1 {
+  font-family: var(--fontComfortaa);
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+h1 .h1-span {
+  font-weight: 900;
+  font-size: 4.5rem;
+  display: inline-block;
+  font-family: var(--fontComfortaaMONO);
+}
+
+.animate {
+  font-family: var(--fontComfortaaMONO);
+  width: 7ch;
+  font-size: 4.5rem;
+  overflow: hidden;
+  display: inline-block;
+  font-weight: 300;
+  animation: typing 3s steps(8) infinite alternate, blink 0.6s step-end infinite;
+  vertical-align: bottom; /* Alinea con el resto del texto */
+  border-right: 3px solid #131313; /* El cursor es un borde */
+}
+
+@keyframes typing {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 8ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent; /* Hace que el borde sea invisible en el 50% del ciclo */
+  }
+}
