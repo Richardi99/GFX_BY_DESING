@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/MarcoDiv.css'
 
-function MarcoDiv() {
+function MarcoDiv({ children }) {
   return (
     <div className='MarcoDiv'>
       <div className='MarcoDiv-header'>
@@ -10,6 +10,7 @@ function MarcoDiv() {
         <span></span>
       </div>
       <div className='MarcoDiv-body'>
+        {children}
        {/*  <div className="MarcoDiv-body-numero"></div>
         <div className="MarcoDiv-body-title"></div>
         <div className="MarcoDiv-body-description"></div> */}
