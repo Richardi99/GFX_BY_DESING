@@ -1,7 +1,6 @@
 .Us-container {
   display: flex;
   flex-direction: row;
-  background-color: aqua;
 }
 
 
@@ -12,7 +11,6 @@
 }
 
 .Us-container-Text h2 {
-  background-color: red;
 }
 
 .Us-container-Videos {
