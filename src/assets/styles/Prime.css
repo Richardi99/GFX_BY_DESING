@@ -1,6 +1,15 @@
-.Prime-contailer {
+
+
+
+.Prime-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Prime-building {
   box-sizing: border-box;
-  margin-left: 5rem;
+
 }
 
 h1 {
@@ -9,11 +18,13 @@ h1 {
   font-weight: 300;
   font-style: normal;
   font-size: 4rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
 }
 
 h1 .h1-span {
   font-weight: 900;
-  font-size: 4.5rem;
+  font-size: 4.6rem;
   display: inline-block;
   font-family: var(--fontComfortaaMONO);
 }
@@ -44,3 +55,183 @@ h1 .h1-span {
     border-color: transparent; /* Hace que el borde sea invisible en el 50% del ciclo */
   }
 }
+
+.Prime-building h2 {
+  font-family: var(--fontRaleway);
+  font-weight: 400;
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  letter-spacing: .5px;
+  margin-bottom: 1.5rem;
+}
+
+/* TEXT SERVICIOS --------------------------------------------------- */
+
+.PrimeText3 {
+  font-family: var(--fontRadio);
+  color: #000;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  gap: 5px; /* Espacio entre los elementos */
+}
+
+.PrimeText3 span {
+  margin-right: 10px;
+  animation: alternateFontWeight 3s infinite; /* Ciclo total de 6 segundos */
+  display: inline-block; /* Necesario para aplicar transform */
+}
+
+.PrimeText3 .span1 {
+  animation-delay: 0s; /* Primero inicia inmediatamente */
+}
+
+.PrimeText3 .span2 {
+  animation-delay: 1s; /* Segundo inicia después de 2 segundos */
+}
+
+.PrimeText3 .span3 {
+  animation-delay: 2s; /* Tercero inicia después de 4 segundos */
+}
+
+/* Animación para alternar el peso de la fuente, el color y el tamaño */
+@keyframes alternateFontWeight {
+  0%, 100% {
+    transform: scale(1); /* Tamaño original */
+  }
+
+  30% {
+    color: #0B7678;
+    transform: scale(1); /* Aumenta el tamaño un poco */
+  }
+  
+  50% {
+    color: #F25E3D;
+    transform: scale(1.05); /* Aumenta más el tamaño */
+  }
+  
+  80% {
+    color: #251207;
+    transform: scale(1); /* Aumenta el tamaño un poco */
+  }
+}
+
+
+
+/*-------------------------------------------------------------------- */
+
+
+
+/* SECTION FROM ----------------------------------------------------- */
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-right: 8rem;
+  width: 390px;
+  height: 490px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 18px;
+  background: #0B7678;
+}
+
+form input, textarea {
+  width: 300px ;
+  border-radius: 7px;
+  border: 2px solid #FFF;
+  background: rgba(255, 255, 255, 0.00);
+  padding-left: 1rem;
+}
+
+form  input {
+  height: 45px;
+}
+form  input::placeholder {
+  color: #F5F5F5;
+  font-family: var(--fontRaleway);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+
+
+form  textarea {
+  height: 95px;
+}
+
+form  textarea::placeholder {
+  color: #F5F5F5;
+  font-family: var(--fontRaleway);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 10px;
+}
+
+form h3 {
+  color: #FFF;
+  font-family: var(--fontPoppins);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+  margin-top: 30px;
+}
+
+form .form-terminos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: var(--fontRadio);
+  color: white;
+  width: 100%;
+  align-self: flex-start;
+  margin-left: 30px;
+}
+
+form .checkbox {
+  width: 16px;
+  height: 16px;
+  align-items: center;
+  margin-right: 10px;
+  border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+form button {
+  margin-bottom: 23px;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background: #000;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 40px;
+  font-family: var(--fontRaleway);
+  font-weight: 900;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------- */

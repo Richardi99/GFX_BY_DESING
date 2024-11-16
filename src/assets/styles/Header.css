@@ -1,18 +1,21 @@
 @import '../styles/Variables.css';
 
+
 header {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 3rem;
+}
+
+.center {
+  padding: 0 4rem;
 }
 
 header .header-logo img{
   max-width: 180px;
   height: auto;
   margin-top: 10px;
-  margin-left: 2.5rem;
   align-items: center;
 }
 
@@ -66,6 +69,7 @@ header nav ul li:nth-child(5) a {
   animation: pulse 1s infinite;
   /* Aquí eliminamos la animación de subrayado */
   text-decoration: none; /* Aseguramos que no tenga subrayado por defecto */
+  margin-right: 0;
 }
 
 header nav ul li:nth-child(5) a::after {
@@ -75,7 +79,7 @@ header nav ul li:nth-child(5) a::after {
 /* Animación de pulsación */
 @keyframes pulse {
   0% { transform: scale(1); }
-  50% { transform: scale(1.04); }
+  50% { transform: scale(1.05); }
   100% { transform: scale(1); }
 }
 

@@ -5,7 +5,7 @@ import ButtonNav from '../component/ButtonNav'
 
 function Header() {
   return (
-    <header className='header'>
+    <header className='header center'>
       <div className="header-logo">
         <img src= {logo_sin_fondo} alt="GFX by desing" />
       </div>
