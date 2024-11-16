@@ -5,11 +5,32 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 .Prime-building {
   box-sizing: border-box;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease, visibility 1s ease;
 
+}
+
+.Prime-building.visible, form.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Animación de entrada desde la izquierda */
+.slide-in-left {
+  transform: translateX(-100%);
+  animation: slideInLeft .5s forwards ease-out;
+}
+
+@keyframes slideInLeft {
+  to {
+    transform: translateX(0);
+  }
 }
 
 h1 {
@@ -20,6 +41,7 @@ h1 {
   font-size: 4rem;
   box-sizing: border-box;
   margin-bottom: 1rem;
+  margin-top: 0;
 }
 
 h1 .h1-span {
@@ -131,14 +153,48 @@ form {
   display: flex;
   flex-direction: column;
   width: auto;
-  margin-right: 8rem;
-  width: 390px;
+  margin-right: 6rem;
+  width: 380px;
   height: 490px;
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
   border-radius: 18px;
   background: #0B7678;
+  margin-top: 50px;
+  transform: translateY(100%); /* Formulario inicialmente fuera de la pantalla */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
+
+form.visible {
+  transform: translateY(0); /* Mostrar el formulario al cargar */
+  opacity: 1;
+  visibility: visible;
+}
+
+form.wobble {
+  animation: wobble .5s infinite; /* Activa la animación de wobble */
+}
+
+@keyframes wobble {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(15deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  45% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
 }
 
 form input, textarea {
@@ -152,28 +208,53 @@ form input, textarea {
 form  input {
   height: 45px;
 }
+
 form  input::placeholder {
-  color: #F5F5F5;
+  color: #f5f5f5b8;
   font-family: var(--fontRaleway);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  }
+}
+
+form  input:not(:placeholder-shown), textarea:not(:placeholder-shown) {
+  color: #fff; 
+}
+
+form input:focus {
+  outline: none;
+  caret-color: white;
+  font-size: 1rem;
+  background: transparent;
+}
+form textarea:focus {
+  outline: none;
+  caret-color: white;
+  font-size: 1rem;
+  background: transparent;
+}
+
+
+form input:valid {
+  font-size: 1rem;
+  background: transparent;
+}
 
 
 form  textarea {
   height: 95px;
+  background: transparent;
+  padding-top: 10px;
 }
 
 form  textarea::placeholder {
-  color: #F5F5F5;
+  color: #f5f5f5b8;
   font-family: var(--fontRaleway);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-top: 10px;
 }
 
 form h3 {
@@ -224,8 +305,6 @@ form button {
   align-self: flex-start;
   margin-left: 30px;
 }
-
-
 
 
 

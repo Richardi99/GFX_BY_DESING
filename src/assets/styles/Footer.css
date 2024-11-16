@@ -1,4 +1,20 @@
 footer {
-  background-color: aqua;
+  background-color: #251207;
   width: 100%;
+  color: #fff;
+  font-family: var(--fontRadio);
+  text-align: center;
+}
+
+footer .footer-container {
+  padding: 10px 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+footer .footer-container a {
+  
+  color: #fff;
 }

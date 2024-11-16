@@ -2,7 +2,9 @@ import React from 'react'
 
 function Us() {
   return (
-    <div>Us</div>
+    <section id='Us'>
+      SECCION US
+    </section>
   )
 }
 
