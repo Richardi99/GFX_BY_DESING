@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/Us.css'
+import MarcoDiv from '../component/MarcoDiv'
 
 function Us() {
   return (
@@ -26,6 +27,8 @@ function Us() {
       </div> 
 
       </div>
+
+      <MarcoDiv/>
     </section>
   )
 }
