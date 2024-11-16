@@ -4,6 +4,22 @@
   grid-template-rows: auto 1fr auto;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Asegura que ocupen toda la altura de la pantalla */
+  box-sizing: border-box; /* Incluye el padding en el tamaño total de los elementos */
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px; /* Ajusta esto al valor de la altura de tu navbar */
+}
+
+.height-general {
+  height: 85vh;
+}
+
+.M-top {
+  margin-top: 40px;
+}
 
 
 

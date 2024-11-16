@@ -9,7 +9,7 @@ header {
   position: sticky;
   top: 0;
   transition: all 0.25s ease; /* Transición general */
-  z-index: 10;
+  z-index: 100;
 }
 
 .center {
@@ -22,6 +22,7 @@ header .header-logo img{
   margin-top: 10px;
   align-items: center;
   transition: transform 0.3s ease, max-width 0.3s ease; /* Añadido max-width para el logo */
+  z-index: 1000;
 }
 
 header nav ul{

@@ -31,19 +31,20 @@ function Header() {
   return (
      
     <header className={`header center ${scrolled ? 'scrolled' : ''}`}>
-      <div className="header-logo">
-        <img src= {logo_sin_fondo} alt="GFX by desing" />
+      <a href="#">
+        <div className="header-logo">
+          <img src={logo_sin_fondo} alt="GFX by design" />
       </div>
+        </a>
       <nav className='header-nav'>
         <ul >
           <li><a href='#'>Home</a></li>
-          <li><a href='#'>Us</a></li>
-          <li><a href='#'>Services</a></li>
-          <li><a href='#'>Portfolio</a></li>
-          <li><a  href='#'>Drop me a message !</a></li>
+          <li><a href='#Us'>Us</a></li>
+          <li><a href='#Service'>Services</a></li>
+          <li><a href='#portfolio'>Portfolio</a></li>
+          <li><a  href='#contact'>Drop me a message !</a></li>
         </ul>
       </nav>
-
       <ButtonNav/>
 
     </header>

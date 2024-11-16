@@ -1,0 +1,21 @@
+.Us-container {
+  display: flex;
+  flex-direction: row;
+  background-color: aqua;
+}
+
+
+
+.Us-container-Text {
+  display: flex;
+  flex-direction: column;
+}
+
+.Us-container-Text h2 {
+  background-color: red;
+}
+
+.Us-container-Videos {
+  display: flex;
+}
+

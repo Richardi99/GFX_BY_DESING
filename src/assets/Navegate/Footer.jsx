@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
       <div className='footer-container'>
-        GFX BY DESIGN © Todos los derechos reservados. Diseñado por <a target="_blank" href="https://www.byrtec.net">Byrtec</a>
+      © 2024 GFX BY DESIGN - Todos los derechos reservados. Diseñado por <a target="_blank" href="https://www.byrtec.net">Byrtec</a>.
       </div>
     </footer>
   )

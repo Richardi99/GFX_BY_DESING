@@ -1,8 +1,11 @@
 import React from 'react'
+import '../styles/Us.css'
 
 function Us() {
   return (
     <section id='Us'>
+      <div className='Us-container center height-general M-top'>
+
       <div className='Us-container-Text'>
         <h2>Us</h2>
         <div className='Us-Titles'>
@@ -13,15 +16,16 @@ function Us() {
         </div>
       </div>
 
-      <div className='Us-container-Img'>
+      <div className='Us-container-Videos'>
         <div className='Us-container-Img-video1'>
-          <video src="#">Video1</video>
+          VIDEO 1<video src="#">Video1</video>
         </div>
         <div className='Us-container-Img-video1'>
-          <video src="#">Video2</video>
+        VIDEO 2<video src="#">Video2</video>
         </div>
-      </div>
+      </div> 
 
+      </div>
     </section>
   )
 }
