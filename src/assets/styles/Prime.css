@@ -242,6 +242,7 @@ form input:valid {
 }
 
 
+
 form  textarea {
   height: 95px;
   background: transparent;
@@ -255,6 +256,11 @@ form  textarea::placeholder {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+form textarea:valid {
+  font-size: 1rem;
+  background: transparent;
 }
 
 form h3 {

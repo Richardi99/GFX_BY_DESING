@@ -6,6 +6,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  transition: all 0.25s ease; /* Transición general */
+  z-index: 10;
 }
 
 .center {
@@ -17,6 +21,7 @@ header .header-logo img{
   height: auto;
   margin-top: 10px;
   align-items: center;
+  transition: transform 0.3s ease, max-width 0.3s ease; /* Añadido max-width para el logo */
 }
 
 header nav ul{
@@ -36,6 +41,7 @@ header nav ul a {
   display: inline-block; /* Ajusta el ancho solo al tamaño del texto */
   padding: 10px 0; /* Aplica padding solo en la parte superior e inferior, no en los lados */
   margin-right: 50px;
+  transition: font-size 0.3s ease padding 0.3s ease;
 }
 
 /* Subrayado */
@@ -83,3 +89,28 @@ header nav ul li:nth-child(5) a::after {
   100% { transform: scale(1); }
 }
 
+
+/* Estilos cuando el header tiene el estado 'scrolled' */
+header.scrolled {
+  background-color: rgba(255, 255, 255, 0.425);
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease; /* Transición suave para el fondo */
+}
+
+header.scrolled .header-logo img {
+  max-width: 140px;
+  max-height: 190px;
+  transform: scale(0.9);
+  transition: transform 0.3s ease, max-width 0.3s ease; /* Asegura que el logo tenga transición fluida */
+}
+
+header.scrolled nav ul a {
+  font-size: clamp(1.2rem, 1.2vw, 1.7rem);
+  padding: 8px 0;
+  transition: font-size 0.3s ease, padding 0.3s ease;
+}
+
+/* Añadir will-change para optimizar el rendimiento */
+header.scrolled, header.scrolled .header-logo img {
+  will-change: transform, max-width, background-color, backdrop-filter;
+}
