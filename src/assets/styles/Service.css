@@ -1,0 +1,146 @@
+/* SECTION CARD ------------------------------------------ */
+.Service-container{
+  
+}
+
+#Service {
+  text-align: center;
+}
+
+#Service h2 {
+  color: #000;
+  font-family: var(--fontRaleway);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #0B7678;
+  margin-top: 0;
+  text-align: center;
+  
+}
+
+
+
+
+
+#Service .Cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: .5rem;
+}
+
+
+/* ANIMACIONES ************************* */
+
+/* From Uiverse.io by suleymanlaarabidev */ 
+.Service-Card {
+  width: 350px;
+  height: 450px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  font-size: 1rem;
+  font-weight: 900;
+  overflow: hidden;
+  position: relative;
+}
+
+.Service-Card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  background: #0ABFBF;
+}
+
+/* First content (front side) */
+.first-content {
+  height: 407px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: inherit;
+  transition: all 0.3s ease-in-out;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden; /* Oculta la parte sobrante del video */
+}
+
+.Service-Card:hover .first-content {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+/* Second content (back side) */
+.second-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: inherit;
+  transition: all 0.3s ease-in-out;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.Service-Card:hover .second-content {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+.Service-Card .MarcoDiv {
+  width: 100%;
+  height: 100%;
+  border: none; /* Evita que los bordes externos creen separación visual */
+}
+
+
+.first-content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.first-content-text h3 {
+  color: #000;
+  font-family: var(--fontPoppins);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
+  text-align: start;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+}
+
+.first-content-text p {
+  padding-top: 5px;
+  color: #000;
+  font-family: var(--fontPoppins);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: start;
+  padding: 30px 0;
+}
+
+
+
+/* ------------------------------------------------------------------- */
