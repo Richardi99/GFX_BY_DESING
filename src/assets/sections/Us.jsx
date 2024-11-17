@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/Us.css";
 import MarcoDiv from "../component/MarcoDiv";
+import video1 from '../videos/Vid1-c.mp4'
+import video2 from '../videos/vid2-c.mp4'
 
 function Us() {
   return (
@@ -24,16 +26,24 @@ function Us() {
         </div>
 
         <div className="Us-container-Videos">
-            <div className="Us-container-Img-video1">
-          <MarcoDiv>
-              VIDEO 1<video src="#">Video1</video>
-          </MarcoDiv>
+            <div className="Us-container-Img-video1 videx1">
+              <MarcoDiv>
+                  <video 
+                  className="vid-c1" 
+                  src ={video1} 
+                  autoPlay muted loop>
+                  </video>
+              </MarcoDiv>
             </div>
 
-            <div className="Us-container-Img-video1">
-          <MarcoDiv>
-              VIDEO 2<video src="#">Video2</video>
-          </MarcoDiv>
+            <div className="Us-container-Img-video1 videx2">
+              <MarcoDiv>
+                  <video 
+                  className="vid-c1" 
+                  src= {video2}
+                  autoPlay muted loop>
+                  </video>
+              </MarcoDiv>
             </div>
         </div>
       </div>

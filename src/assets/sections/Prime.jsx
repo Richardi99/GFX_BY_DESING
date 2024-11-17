@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { Helmet } from "react-helmet";
 import "../styles/Prime.css";
+
 
 function Prime() {
 
@@ -34,13 +34,7 @@ function Prime() {
 
   return (
     <>
-      <Helmet>
-        <title>GFX BY DESIGN</title>
-        <meta
-          name="description"
-          content="Your partner in transforming ideas into stunning visuals."
-        />
-      </Helmet>
+
       <section id="Primer">
         <div className="Prime-container center">
           <div className="Prime-building">
