@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Us.css";
 import MarcoDiv from "../component/MarcoDiv";
-import video1 from '../videos/Vid1c.mp4'
+import video1 from '../videos/vid1c.mp4'
 import video2 from '../videos/vid2c.mp4'
 
 function Us() {
