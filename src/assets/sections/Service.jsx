@@ -1,6 +1,10 @@
 import React from "react";
 import "../styles/Service.css";
 import MarcoDiv from "../component/MarcoDiv";
+import mono from '../img/diseños/mono.png'
+import cabra from '../img/diseños/cabra.png'
+import cinturon from '../img/diseños/cinturon.png'
+import polo from '../img/diseños/polo.png'
 
 function Service() {
   return (
@@ -23,7 +27,13 @@ function Service() {
 
               <div className="second-content">
                 <div className="first-content-text2">
-                  <h3>content2</h3>
+                  <h3>BRANDING</h3>
+                  <div className="second-content-imgs">
+                    <img src={polo} alt="Imagen 1"/>
+                    <img src={mono} alt="Imagen 2"/>
+                    <img src={cabra} alt="Imagen 3"/>
+                    <img src={cinturon} alt="Imagen 4"/>
+                  </div>
                 </div>
               </div>
             </MarcoDiv>
