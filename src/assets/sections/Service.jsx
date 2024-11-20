@@ -5,6 +5,10 @@ import mono from '../img/diseños/mono.png'
 import cabra from '../img/diseños/cabra.png'
 import cinturon from '../img/diseños/cinturon.png'
 import polo from '../img/diseños/polo.png'
+import poster1 from '../img/diseños/POSTER1.png'
+import poster2 from '../img/diseños/POSTER2.png'
+import piano from '../img/diseños/piano.png'
+
 
 function Service() {
   return (
@@ -25,7 +29,7 @@ function Service() {
                 </div>
               </div>
 
-              <div className="second-content">
+              <div className="second-content flip-card-inne">
                 <div className="first-content-text2">
                   <h3>BRANDING</h3>
                   <div className="second-content-imgs">
@@ -38,7 +42,10 @@ function Service() {
               </div>
             </MarcoDiv>
           </div>
+
           <div className="Service-Card">
+
+            <div className="Card-inner">
             <MarcoDiv>
               <div className="first-content">
                 <div className="first-content-text">
@@ -53,10 +60,16 @@ function Service() {
 
               <div className="second-content">
                 <div className="first-content-text2">
-                  <h3>content2</h3>
+                  <h3>PRINTING</h3>
+                  <div className="second-content-imgs">
+                    <img src={poster1} alt="Imagen 1"/>
+                    <img src={poster2} alt="Imagen 2"/>
+
+                  </div>
                 </div>
               </div>
             </MarcoDiv>
+            </div>
           </div>
           <div className="Service-Card">
             <MarcoDiv>
@@ -73,7 +86,11 @@ function Service() {
 
               <div className="second-content">
                 <div className="first-content-text2">
-                  <h3>content2</h3>
+                <h3>GRAPHICS DESIGN</h3>
+                  <div className="second-content-imgs">
+                    <img src={piano} alt="Imagen 1"/>
+
+                  </div>
                 </div>
               </div>
             </MarcoDiv>

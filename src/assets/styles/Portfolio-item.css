@@ -1,0 +1,41 @@
+.Portfolio-all {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten a nuevas líneas */
+  justify-content: space-between; /* Opcional: Ajusta la distribución horizontal */
+  margin-top: 50px;
+  gap: 5px; /* Espacio entre elementos */
+}
+
+
+
+.Portfolio-all .Portfolio-item {
+  max-width: 390px; /* Asegura que no se expanda más allá de 290px */
+}
+.Portfolio-container {
+  min-height: auto; /* Ajustar al contenido dinámico */
+  padding-bottom: 100px; /* Añade espacio suficiente para evitar superposición */
+}
+
+/* General: Asegura que las secciones tengan separación */
+section {
+  margin-bottom: 150px; /* Espacio entre secciones */
+}
+
+
+.Portfolio-all .MarcoDiv {
+  width: 350px;
+}
+
+.Portfolio-all .MarcoDiv .MarcoDiv-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.MarcoDiv .MarcoDiv-body img {
+  width: auto; /* Mantiene el ancho máximo dentro del contenedor */
+  height: auto; /* Ajusta la altura para mantener las proporciones */
+  object-fit: contain; /* Ajusta la imagen para que quepa completamente en el contenedor */
+  display: block;
+}
