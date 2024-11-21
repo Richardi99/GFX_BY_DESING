@@ -40,14 +40,20 @@ html, body {
 }
 
 /* Botón activo (fondo rojo para el primero) */
-.Portfolio-class button.active {
-  background-color: red;
+.Portfolio-class button.active:nth-child(1) {
+  background-color: var(--celesteBase);
+  border-radius: 7px;
   color: #fff; /* Ajusta el color del texto si quieres contraste */
+}
+.Portfolio-class button.active:nth-child(n+2) {
+  background-color: transparent;
+  border-radius: 7px;
+  color: var(--celesteBase); /* Color del texto */
+  border-bottom: 4px solid var(--celesteBase);
 }
 
 /* Botón inactivo: solo subrayado */
 .Portfolio-class button.inactive {
-  background-color: transparent;
   color: #000; /* Color por defecto del texto */
 }
 
