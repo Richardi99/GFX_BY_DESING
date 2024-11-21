@@ -16,7 +16,7 @@
 
 }
 
-.Prime-building.visible, form.visible {
+.Prime-building.visible, #Primer form.visible {
   opacity: 1;
   visibility: visible;
 }
@@ -149,7 +149,7 @@ h1 .h1-span {
 
 /* SECTION FROM ----------------------------------------------------- */
 
-form {
+#Primer form {
   display: flex;
   flex-direction: column;
   width: auto;
@@ -169,13 +169,13 @@ form {
 }
 
 
-form.visible {
+#Primer form.visible {
   transform: translateY(0); /* Mostrar el formulario al cargar */
   opacity: 1;
   visibility: visible;
 }
 
-form.wobble {
+#Primer form.wobble {
   animation: wobble .5s infinite; /* Activa la animación de wobble */
 }
 
@@ -197,7 +197,7 @@ form.wobble {
   }
 }
 
-form input, textarea {
+#Primer form input,#Primer form textarea {
   width: 300px ;
   border-radius: 7px;
   border: 2px solid #FFF;
@@ -205,11 +205,11 @@ form input, textarea {
   padding-left: 1rem;
 }
 
-form  input {
+#Primer form  input {
   height: 45px;
 }
 
-form  input::placeholder {
+#Primer form  input::placeholder {
   color: #f5f5f5b8;
   font-family: var(--fontRaleway);
   font-size: 15px;
@@ -218,17 +218,17 @@ form  input::placeholder {
   line-height: normal;
 }
 
-form  input:not(:placeholder-shown), textarea:not(:placeholder-shown) {
+#Primer form  input:not(:placeholder-shown),#Primer form textarea:not(:placeholder-shown) {
   color: #fff; 
 }
 
-form input:focus {
+#Primer form input:focus {
   outline: none;
   caret-color: white;
   font-size: 1rem;
   background: transparent;
 }
-form textarea:focus {
+#Primer form textarea:focus {
   outline: none;
   caret-color: white;
   font-size: 1rem;
@@ -236,20 +236,20 @@ form textarea:focus {
 }
 
 
-form input:valid {
+#Primerr form input:valid {
   font-size: 1rem;
   background: transparent;
 }
 
 
 
-form  textarea {
+#Primer form  textarea {
   height: 95px;
   background: transparent;
   padding-top: 10px;
 }
 
-form  textarea::placeholder {
+#Primer form  textarea::placeholder {
   color: #f5f5f5b8;
   font-family: var(--fontRaleway);
   font-size: 15px;
@@ -258,12 +258,12 @@ form  textarea::placeholder {
   line-height: normal;
 }
 
-form textarea:valid {
+#Primer form textarea:valid {
   font-size: 1rem;
   background: transparent;
 }
 
-form h3 {
+#Primer form h3 {
   color: #FFF;
   font-family: var(--fontPoppins);
   font-size: 40px;
@@ -274,7 +274,7 @@ form h3 {
   margin-top: 30px;
 }
 
-form .form-terminos {
+#Primer form .form-terminos {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -285,7 +285,7 @@ form .form-terminos {
   margin-left: 30px;
 }
 
-form .checkbox {
+#Primer form .checkbox {
   width: 16px;
   height: 16px;
   align-items: center;
@@ -295,7 +295,7 @@ form .checkbox {
   cursor: pointer;
 }
 
-form button {
+#Primer form button {
   margin-bottom: 23px;
   padding: 10px 40px;
   border-radius: 10px;

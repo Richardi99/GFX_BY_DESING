@@ -12,11 +12,11 @@
   position: absolute;
   background-color: #05adb0;
   color: white;
-  padding: 15px;
+  padding: 10px;
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  font-size: 16px;
+  font-size: 15px;
   z-index: 10;
   pointer-events: none; /* Asegura que no interfiera con los clics */
   transition: left 0.1s, top 0.1s; /* Transición suave para el movimiento */

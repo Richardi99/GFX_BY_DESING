@@ -1,0 +1,221 @@
+#Contact h2{
+  color: #000;
+  font-family: var(--fontRaleway);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: block;
+  text-align: center;
+}
+
+#Contact form {
+  box-sizing: border-box;
+  max-width: 760px;
+  height: 350px;
+  padding: 2rem;
+  border-radius: 30px;
+  border: 1px solid #FFF;
+  background: #0B7678;
+}
+
+#Contact form h5 {
+  color: #FFF;
+  font-family: var(--fontRaleway);
+  font-size: 20px;  
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+#Contact form h6 {
+  color: #FFF;
+  font-family: var(--fontRaleway);
+  font-size: 16px;
+  font-style: normal;
+  padding: 12px 0;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+#Contact .Contact-write {
+  display: grid;
+  padding-top: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+#Contact .Contact-write .writ1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+#Contact .Contact-write button {
+  margin-top: 16px;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background: #000;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 40px;
+  font-family: var(--fontRaleway);
+  font-weight: 900;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+#Contact .Contact-write input, textarea{
+  box-sizing: border-box;
+}  
+
+.Contact-write .writ1 input {
+  border-radius: 7px;
+  border: 2px solid #FFF;
+  background: rgba(255, 255, 255, 0.00);
+  width: 320px;
+  height: 50px;
+  padding-left: 10px;
+  color: white;
+}
+
+.Contact-write .writ2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Contact-write .writ2 .form-terminos{
+  color: #F5F5F5;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-weight: var(--fontRadio);
+  display: flex;
+  gap: 10px;
+  
+}
+
+.Contact-write .writ2 .form-terminos input{
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  border: 12px solid white;
+}
+
+.Contact-write .writ2 textarea {
+  border-radius: 10px;
+  border: 1px solid #FFF;
+  background: #0B7678;
+  display: flex;
+  height: 120px;
+  width: 100%;
+  padding:10px;
+  justify-content: center;
+  align-items: center;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+
+/* ---------------- */
+
+#Contact form  input::placeholder {
+  color: #f5f5f5b8;
+  font-family: var(--fontRaleway);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#Contact form  input:not(:placeholder-shown),#Contact form textarea:not(:placeholder-shown) {
+  color: #fff; 
+}
+
+#Contact form input:focus {
+  outline: none;
+  caret-color: white;
+  font-size: 1rem;
+  background: transparent;
+}
+#Contact form textarea:focus {
+  outline: none;
+  caret-color: white;
+  font-size: 1rem;
+  background: transparent;
+}
+
+
+#Contact form input:valid {
+  font-size: 1rem;
+  background: transparent;
+}
+
+
+
+#Contact form  textarea {
+  height: 95px;
+  background: transparent;
+  padding-top: 10px;
+}
+
+#Contact form  textarea::placeholder {
+  color: #f5f5f5b8;
+  font-family: var(--fontRaleway);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#Contact form textarea:valid {
+  font-size: 1rem;
+  background: transparent;
+}
+/* ---------------- */
+
+/* MARCO CONTACT --------------- */
+
+.Contact-square {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.Contact-square a:nth-child(1):hover {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+  scale: 1.05;
+  border: white;
+}
+
+.Contact-square a:hover .MarcoDiv .MarcoDiv-header span{
+  border:1px solid #fff;
+}
+
+.Contact-square article {
+  width: 220px;
+  height: 100px;
+  padding-top: 20px;
+  font-size: 2.2rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+
+
+
+
+
+/* ----------------------------- */
