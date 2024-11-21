@@ -1,16 +1,22 @@
-import React from 'react'
+import React from 'react';
+import '../styles/Portfolio.css';
 
-function PortfolioFilters({selectedCategory, onSelectCategory}) {
+function PortfolioFilters({ selectedCategory, onSelectCategory }) {
+  const categories = ['All', 'Logos', 'Banners', 'Car designs', 'Business cards', 'Others'];
+
   return (
-   <div className="Portfolio-class">
-      <button onClick={() => onSelectCategory('All')} >All</button>
-      <button onClick={() => onSelectCategory('Logos')} >Logos</button>
-      <button onClick={() => onSelectCategory('Banners')} >Banners</button>
-      <button onClick={() => onSelectCategory('Car designs')} >Car designs</button>
-      <button onClick={() => onSelectCategory('Business cards')} >Business cards</button>
-      <button onClick={() => onSelectCategory('Others')} >Others</button>
-   </div>
-  )
+    <div className="Portfolio-class">
+      {categories.map((category, index) => (
+        <button
+          key={category}
+          className={selectedCategory === category || (selectedCategory === '' && index === 0) ? 'active' : ''}
+          onClick={() => onSelectCategory(category)}
+        >
+          {category}
+        </button>
+      ))}
+    </div>
+  );
 }
 
-export default PortfolioFilters
+export default PortfolioFilters;

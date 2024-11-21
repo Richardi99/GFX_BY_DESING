@@ -5,8 +5,8 @@ import mono from '../img/diseños/mono.png'
 import cabra from '../img/diseños/cabra.png'
 import cinturon from '../img/diseños/cinturon.png'
 import polo from '../img/diseños/polo.png'
-import poster1 from '../img/diseños/POSTER1.png'
-import poster2 from '../img/diseños/POSTER2.png'
+import poster1 from '../img/diseños/POSTER1.jpeg'
+import poster2 from '../img/diseños/POSTER2.jpg'
 import piano from '../img/diseños/piano.png'
 
 

@@ -3,13 +3,16 @@
   flex-wrap: wrap; /* Permite que los elementos se ajusten a nuevas líneas */
   justify-content: space-between; /* Opcional: Ajusta la distribución horizontal */
   margin-top: 50px;
-  gap: 5px; /* Espacio entre elementos */
+  gap: 1px; /* Espacio entre elementos */
 }
 
 
 
-.Portfolio-all .Portfolio-item {
-  max-width: 390px; /* Asegura que no se expanda más allá de 290px */
+.Portfolio-item {
+  flex: 1 1 calc(33.333% - 20px); /* 3 columnas por fila con márgenes */
+  max-width: calc(33.333% - 20px); /* Asegura que cada elemento tenga el tamaño correcto */
+  box-sizing: border-box;
+  padding-bottom: 20px;
 }
 .Portfolio-container {
   min-height: auto; /* Ajustar al contenido dinámico */
@@ -17,20 +20,32 @@
 }
 
 /* General: Asegura que las secciones tengan separación */
-section {
+#Portfolio {
   margin-bottom: 150px; /* Espacio entre secciones */
 }
 
 
 .Portfolio-all .MarcoDiv {
-  width: 350px;
+  width: 420px;
+  max-height: auto;
 }
 
 .Portfolio-all .MarcoDiv .MarcoDiv-body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  width: auto;
+  
+}
+
+.Portfolio-all .MarcoDiv .MarcoDiv-body img {
+
+  width: 100%;
+  max-height: 300px;
+  margin: 0;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 0 0 8px 8px;
 }
 
 .MarcoDiv .MarcoDiv-body img {
@@ -38,4 +53,32 @@ section {
   height: auto; /* Ajusta la altura para mantener las proporciones */
   object-fit: contain; /* Ajusta la imagen para que quepa completamente en el contenedor */
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .Portfolio-item {
+    flex: 1 1 calc(50% - 20px); /* En pantallas pequeñas, 2 columnas */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Portfolio-item {
+    flex: 1 1 100%; /* En pantallas muy pequeñas, 1 columna */
+  }
+}
+
+.load-more {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.load-more:hover {
+  background-color: #0056b3;
 }

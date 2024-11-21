@@ -60,9 +60,7 @@
 }
 
 /* La tarjeta gira 180 grados */
-.Service-Card:hover .Card-inner {
-  transform: rotateY(360deg); /* Gira solo 180 grados */
-}
+/*  */
 
 /* Animación para el <h3> en 360 grados */
 .Service-Card:hover .first-content h3 {

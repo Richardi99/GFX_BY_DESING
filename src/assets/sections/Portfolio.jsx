@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import productsData from '../component/productsData'
 import PortfolioFilters from "../component/PortfolioFilters";
 import PortfolioList from "../component/PortfolioList";
+import '../styles/Portfolio.css'
 
 function Portfolio() {
 
-  const [visibleProducts, setVisibleProducts] = useState(10);
+  const [visibleProducts, setVisibleProducts] = useState(6);
   const [selectedCategory, setSelectedCategory] = useState('All')
 
   const filteredProducts = 
@@ -14,12 +15,12 @@ function Portfolio() {
   : productsData.filter((product) => product.category === selectedCategory)
 
   const handleLoadMore = () => {
-    setVisibleProducts((prev) => prev + 10);
+    setVisibleProducts((prev) => prev + 3);
   }
 
   return (
     <section id="Portfolio ">
-      <div className="Portfolio-container center height-general M-top">
+      <div className="Portfolio-container center height-general-portfolio M-top">
         <h2>Portfolio</h2>
           <PortfolioFilters
             selectedCategory={selectedCategory}

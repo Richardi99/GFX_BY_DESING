@@ -1,0 +1,18 @@
+.Portfolio-container h2 {
+color: #000;
+font-family: var(--fontRaleway);
+font-size: 60px;
+font-style: normal;
+font-weight: 600;
+line-height: normal; 
+text-align: center;
+display: inline-block;
+padding-bottom: 10px;
+border-bottom: 4px solid #0B7678;
+}
+
+.Portfolio-container {
+  text-align: center;
+}
+
+

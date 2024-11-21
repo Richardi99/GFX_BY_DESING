@@ -16,10 +16,63 @@ html, body {
 .height-general {
   height: 85vh;
 }
+.height-general-portfolio {
+  min-height: 85vh;
+}
 
 .M-top {
   margin-top: 40px;
 }
+/* Estilo general para los botones */
+.Portfolio-class button {
+  color: #000;
+  font-family: "Radio Canada";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+  margin: 0 10px;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+}
 
+/* Botón activo (fondo rojo para el primero) */
+.Portfolio-class button.active {
+  background-color: red;
+  color: #fff; /* Ajusta el color del texto si quieres contraste */
+}
+
+/* Botón inactivo: solo subrayado */
+.Portfolio-class button.inactive {
+  background-color: transparent;
+  color: #000; /* Color por defecto del texto */
+}
+
+/* Subrayado negro al estar activo */
+.Portfolio-class button.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: currentColor; /* Utiliza el color actual del texto */
+  border-radius: 3px;
+}
+
+/* Subrayado negro para botones inactivos */
+.Portfolio-class button.inactive::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: black; /* Subrayado negro */
+  border-radius: 3px;
+}
 
 
