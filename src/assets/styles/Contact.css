@@ -255,8 +255,56 @@
   font-size: 1rem;
   background: transparent;
 }
-/* ---------------- */
 
+
+/* ---------------- */
+@media screen and (max-width: 1300px) {
+
+  #Contact .Contact-container-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #Contact .Contact-container-details form .Contact-write .write1 input{
+    background-color: rebeccapurple;
+    width: 320px;
+  }
+  #Contact .Contact-container-details form textarea{
+    width: 350px
+  }
+  #Contact .Contact-container-details form .form-terminos{
+    width: 350px;
+  }
+  #Contact.Contact-write .writ2 .form-terminos input{
+    background-color: #131313;
+    padding: 0;
+    width: 30;
+    padding: 0;
+  }
+
+  .Contact-square {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+  }
+}
+
+@media screen and (max-width: 1080px) {
+
+}
+@media screen and (max-width: 750px) {
+
+}
+
+@media screen and (max-width: 520px) {
+
+}
+
+@media screen and (max-width: 420px) {
+
+}
 
 
 
