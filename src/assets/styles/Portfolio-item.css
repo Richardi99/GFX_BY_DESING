@@ -27,7 +27,6 @@
 }
 
 
-
 .Portfolio-item {
   flex: 1 1 calc(32.5% - 5px); /* 3 columnas por fila con márgenes */
   max-width: calc(32.5% - 5px); /* Asegura que cada elemento tenga el tamaño correcto */
