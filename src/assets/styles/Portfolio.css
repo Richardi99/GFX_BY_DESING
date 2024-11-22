@@ -69,12 +69,16 @@ border-bottom: 4px solid #0B7678;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
     gap: 5px;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
   .Portfolio-class button {
     font-size: 18px;
     text-align: center;
     margin: 0 auto;
-    padding: 15px 10px;
+    padding: 12px 10px;
     width: 100%;
     display: block;
   }
