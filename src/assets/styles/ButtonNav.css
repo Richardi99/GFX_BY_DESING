@@ -8,6 +8,7 @@
   gap: .65rem;
   cursor: pointer;
   display: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .ButtonNavMenu div {
