@@ -3,7 +3,7 @@
   flex-wrap: wrap; /* Permite que los elementos se ajusten a nuevas líneas */
   justify-content: space-between; /* Opcional: Ajusta la distribución horizontal */
   margin-top: 50px;
-  gap: 5px; /* Espacio entre elementos */
+  gap: 1px; /* Espacio entre elementos */
 }
 
 
@@ -19,7 +19,7 @@
   font-size: 15px;
   z-index: 10;
   pointer-events: none; /* Asegura que no interfiera con los clics */
-  transition: left 0.1s, top 0.1s; /* Transición suave para el movimiento */
+  /*transition: left 0.1s, top 0.1s;/*  Transición suave para el movimiento */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,14 +29,15 @@
 
 
 .Portfolio-item {
-  flex: 1 1 calc(32.5% - 25px); /* 3 columnas por fila con márgenes */
-  max-width: calc(32.5% - 25px); /* Asegura que cada elemento tenga el tamaño correcto */
+  flex: 1 1 calc(32.5% - 5px); /* 3 columnas por fila con márgenes */
+  max-width: calc(32.5% - 5px); /* Asegura que cada elemento tenga el tamaño correcto */
   box-sizing: border-box;
   padding-bottom: 10px;
   cursor: pointer;
   transition: transform 0.25s ease;
   opacity: 1;
   transition: opacity 0.5s ease, transform 0.3s ease; /* Transición suave */
+
 }
 .Portfolio-container {
   min-height: auto; /* Ajustar al contenido dinámico */
@@ -50,7 +51,7 @@
 
 
 .Portfolio-all .MarcoDiv {
-  width: 420px;
+  width: 390px;
   max-height: auto;
   transition: all 0.2s ease;
 }
@@ -60,6 +61,7 @@
   flex-direction: column;
   justify-content: center;
   width: auto;
+  max-height: 220px;
   
 }
 

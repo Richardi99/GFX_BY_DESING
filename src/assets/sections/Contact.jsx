@@ -5,7 +5,7 @@ import MarcoDiv from "../component/MarcoDiv";
 function Contact() {
   return (
     <section id="Contact">
-      <div className="Contact-container center height-general-portfolio M-top">
+      <div className="Contact-container center height-general-contact M-top">
         <h2>Contact Us</h2>
         <div className="Contact-container-details">
           <form className="form-contact">

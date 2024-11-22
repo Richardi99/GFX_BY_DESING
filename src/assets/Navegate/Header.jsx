@@ -47,6 +47,16 @@ function Header() {
       </nav>
       <ButtonNav/>
 
+      <nav className='header-nav2'>
+        <ul >
+          <li><a href='#'>Home</a></li>
+          <li><a href='#Us'>Us</a></li>
+          <li><a href='#Service'>Services</a></li>
+          <li><a href='#portfolio'>Portfolio</a></li>
+          <li><a  href='#contact'>Drop me a message !</a></li>
+        </ul>
+      </nav>
+
     </header>
   )
 }

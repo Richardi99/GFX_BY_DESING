@@ -19,6 +19,9 @@ html, body {
 .height-general-portfolio {
   min-height: 85vh;
 }
+.height-general-contact {
+  min-height: 69vh;
+}
 
 .M-top {
   margin-top: 40px;

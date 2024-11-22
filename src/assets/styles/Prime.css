@@ -198,11 +198,16 @@ h1 .h1-span {
 }
 
 #Primer form input,#Primer form textarea {
-  width: 300px ;
+  width: 320px ;
   border-radius: 7px;
   border: 2px solid #FFF;
   background: rgba(255, 255, 255, 0.00);
   padding-left: 1rem;
+  box-sizing: border-box;
+}
+
+#Primer form textarea {
+  resize: none;
 }
 
 #Primer form  input {
@@ -317,6 +322,117 @@ h1 .h1-span {
 
 
 
+/* SECTION MEDIA QUER------------------------------------------------------------------- */
+#Contact {
+  display: none;
+}
+#Service {
+  display: none;
+}
+#Portfolio {
+  display: none;
+}
+#Us {
+  display: none;
+} 
+
+@media screen and (max-width: 1200px) {
+
+  .header-nav {
+    display: none;
+  }
+  
+  .ButtonNavMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Prime-container {
+  flex-direction: column;
+}
+}
+
+@media screen and (max-width: 750px) {
+
+  #Primer form{
+    width: 100%;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .center {
+    padding: 0 1.5rem;
+  }
+
+  #Primer form input,#Primer form textarea {
+    width: 89%;
+  }
+
+  #Primer .Prime-building{
+    text-align: center;
+  }
+  #Primer .Prime-building h2 {
+    font-size: 1.2rem;
+  }
+
+  #Primer .Prime-building .PrimeText3 {
+
+    justify-content: space-around ;
+    align-items: center;
+
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #Primer h1 {
+    font-size: 3rem;
+  }
+
+  .center {
+    padding: 0 1.7rem;
+  }
+
+  #Primer h1 .h1-span {
+    font-size: 4rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Primer h1 br {
+    display: none; /* Oculta el salto de línea generado por <br /> */
+  }
+  #Primer h2 br {
+    display: none; /* Oculta el salto de línea generado por <br /> */
+  }
+
+  #Primer .animate {
+    display: block;
+    margin: auto;
+  }
+
+  #Primer .Prime-building .PrimeText3 {
+    text-align: center;
+    margin: auto;
+    justify-content: space-around ;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    display: inline-block;
+    width: 100%;
+  }
+
+  #Primer form .form-terminos {
+    margin-left: 5%;
+    font-size: 0.9rem;
+  }
+}
+
+
 
 
 /*------------------------------------------------------------------- */
+
+
+/* SECTION MEDIA QUER------------------------------------------------------------------- */

@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Service.css";
 import MarcoDiv from "../component/MarcoDiv";
-import mono from '../img/diseños/mono.png'
+import mono from '../img/diseños/piano.png'
 import cabra from '../img/diseños/cabra.png'
 import cinturon from '../img/diseños/cinturon.png'
 import polo from '../img/diseños/polo.png'

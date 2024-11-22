@@ -50,7 +50,7 @@ function Prime() {
             <div className="PrimeText3">
               <span className="span1">Branding Design</span>
               <strong> - </strong>
-              <span className="span2">Graphics Design</span>
+              <span className="span2"> Graphics Design</span>
               <strong> - </strong>
               <span className="span3">Printing</span>
             </div>

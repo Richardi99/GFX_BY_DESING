@@ -12,8 +12,12 @@ header {
   z-index: 100;
 }
 
+.header-nav2 {
+  display: none;
+}
+
 .center {
-  padding: 0 4.5rem;
+  padding: 0 7rem;
 }
 
 header .header-logo img{

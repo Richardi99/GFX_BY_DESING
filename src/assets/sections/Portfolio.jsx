@@ -19,7 +19,7 @@ function Portfolio() {
   }
 
   return (
-    <section id="Portfolio ">
+    <section id="Portfolio">
       <div className="Portfolio-container center height-general-portfolio M-top">
         <h2>Portfolio</h2>
           <PortfolioFilters

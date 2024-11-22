@@ -1,3 +1,10 @@
+#Contact {
+  margin-bottom: 50px;
+}
+
+
+
+
 #Contact h2{
   color: #000;
   font-family: var(--fontRaleway);
@@ -9,10 +16,80 @@
   text-align: center;
 }
 
+.Contact-container-details{
+  display: flex;
+  gap: 50px;
+}
+
+/* MARCO CONTACT --------------- */
+
+.Contact-square {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+.Contact-square a {
+  text-decoration: none;
+  margin-top: 10px;
+  color: #131313;
+  font-family: var(--fontRadio);
+}
+
+.Contact-square a:hover {
+  background-color: #F25E3D;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+  scale: 1.05;
+  border: white;
+}
+
+.Contact-square a:hover .MarcoDiv .MarcoDiv-header span{
+  border:2px solid #fff;
+}
+
+.Contact-square a:hover .MarcoDiv .MarcoDiv-header{
+  border-bottom:2px solid #fff;
+}
+.Contact-square a:hover .MarcoDiv .MarcoDiv-body{
+  border-top:1px solid #fff;
+}
+
+#Contact form  input:not(:placeholder-shown),#Contact form textarea:not(:placeholder-shown) {
+  color: #fff; 
+}
+
+.Contact-square article {
+  width: 220px;
+  height: 100px;
+  padding-top: 20px;
+  font-size: 2.2rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
 #Contact form {
   box-sizing: border-box;
   max-width: 760px;
-  height: 350px;
+  height: auto;
   padding: 2rem;
   border-radius: 30px;
   border: 1px solid #FFF;
@@ -180,38 +257,6 @@
 }
 /* ---------------- */
 
-/* MARCO CONTACT --------------- */
-
-.Contact-square {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: wrap;
-  gap: 20px;
-  justify-content: space-between;
-}
-
-.Contact-square a:nth-child(1):hover {
-  background-color: red;
-  color: white;
-  border-radius: 10px;
-  transition: all 0.25s ease;
-  scale: 1.05;
-  border: white;
-}
-
-.Contact-square a:hover .MarcoDiv .MarcoDiv-header span{
-  border:1px solid #fff;
-}
-
-.Contact-square article {
-  width: 220px;
-  height: 100px;
-  padding-top: 20px;
-  font-size: 2.2rem;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
 
 
 
