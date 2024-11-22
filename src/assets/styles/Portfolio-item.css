@@ -1,9 +1,10 @@
 .Portfolio-all {
   display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se ajusten a nuevas líneas */
-  justify-content: space-between; /* Opcional: Ajusta la distribución horizontal */
+  flex-wrap: wrap; /* Permite ajustar los elementos a nuevas líneas */
+  justify-content: space-between; /* Distribuye los elementos uniformemente */
+  gap: 15px; /* Espaciado uniforme entre elementos */
   margin-top: 50px;
-  gap: 1px; /* Espacio entre elementos */
+  padding: 0 10px; /* Espaciado interno lateral para evitar bordes ajustados */
 }
 
 
