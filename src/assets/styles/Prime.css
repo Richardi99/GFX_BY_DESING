@@ -385,12 +385,32 @@ h1 .h1-span {
 }
 
 @media screen and (max-width: 520px) {
+  
+  header .header-logo img{
+    max-width: 120px;
+    height: auto;
+
+  }
+
+/*   header {
+    height: 90px;
+    } */
+    
+    header.scrolled .header-logo img {
+      max-width: 110px;
+    }
+    
+    header.scrolled {
+  height: 85px;
+
+}
+  
   #Primer h1 {
     font-size: 3rem;
   }
 
   .center {
-    padding: 0 1.7rem;
+    padding: 0 1rem;
   }
 
   #Primer h1 .h1-span {
