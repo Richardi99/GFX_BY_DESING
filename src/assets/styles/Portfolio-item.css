@@ -37,8 +37,8 @@
   transition: transform 0.25s ease;
   opacity: 1;
   transition: opacity 0.5s ease, transform 0.3s ease; /* Transición suave */
-
 }
+
 .Portfolio-container {
   min-height: auto; /* Ajustar al contenido dinámico */
   padding-bottom: 40px; /* Añade espacio suficiente para evitar superposición */

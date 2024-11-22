@@ -15,6 +15,76 @@ border-bottom: 4px solid #0B7678;
   text-align: center;
 }
 
+@media screen and (min-width: 751px) and (max-width: 1200px) {
+
+  #Portfolio .Portfolio-item {
+    flex: 1  calc(40.5% - 5px); /* 3 columnas por fila con márgenes */
+    max-width: calc(50.5% - 5px); /* Asegura que cada elemento tenga el tamaño correcto */
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+    opacity: 1;
+    transition: opacity 0.5s ease, transform 0.3s ease; /* Transición suave */
+  }
+  #Portfolio .Portfolio-item {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  #Portfolio .Portfolio-item .MarcoDiv{
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  
+  
+}
+
+@media screen and (max-width: 750px) {
+  #Portfolio .Portfolio-all {
+    flex-direction: column;
+  }
+  
+  #Portfolio .Portfolio-item {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  
+  #Portfolio .Portfolio-item .MarcoDiv img{
+    width:100%;
+  }
+
+
+  
+  
+}
+
+@media screen and (max-width: 520px) {
+
+  .Portfolio-class{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 5px;
+  }
+  .Portfolio-class button {
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 10px;
+    width: 100%;
+    display: block;
+  }
+  
+}
+
+@media screen and (max-width: 420px) {
+
+}
+
 
 
 

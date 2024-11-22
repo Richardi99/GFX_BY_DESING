@@ -326,15 +326,8 @@ h1 .h1-span {
 #Contact {
   display: none;
 }
-#Service {
-  display: none;
-}
-#Portfolio {
-  display: none;
-}
-#Us {
-  display: none;
-} 
+
+
 
 @media screen and (max-width: 1200px) {
 

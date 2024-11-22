@@ -301,3 +301,48 @@
 
 
 
+@media screen and (max-width: 1200px) {
+  #Service .Cards {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  #Service .Cards .Service-Card{
+    margin-bottom: 35px;
+  }
+
+  #Service .height-general {
+    height: auto; /* Ajusta la altura automáticamente al contenido */
+  }
+
+  
+
+}
+
+@media screen and (max-width: 750px) {
+
+  .Service-Card {
+    width: 300px;
+    height: 450px;
+  }
+
+  .first-content-text h3 {
+    font-size: 20px;
+  }
+
+  .first-content-text p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+
+
+}
+
+@media screen and (max-width: 420px) {
+
+}
+
+
