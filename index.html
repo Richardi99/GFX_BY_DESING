@@ -7,9 +7,15 @@
 
     <!-- SEO básico -->
     <meta name="description" content="A team of marketers, designers, developers, and strategists delivering innovative solutions in web design, SEO, and digital marketing. We tailor strategies to boost online visibility and achieve measurable results." />
-    <meta name="keywords" content="graphic design, GFX By Design, professional design, logos, visual identity" />
+    <meta name="keywords" content="graphic design,GFX By Design,professional design, logos, visual identity, stunning visuals" />
     <meta name="author" content="GFX By Design" />
     <meta name="robots" content="index, follow" />
+
+    <!-- Etiqueta canónica -->
+    <link rel="canonical" href="https://gfxbydesign.com" />
+
+    <!-- Hreflang para SEO Internacional -->
+    <link rel="alternate" hreflang="en-US" href="https://gfxbydesign.com" />
 
     <!-- Open Graph (Facebook, Instagram, WhatsApp) -->
     <meta property="og:title" content="GFX By Design - Professional Designs" />
@@ -20,9 +26,7 @@
     <meta property="og:image:alt" content="Preview of GFX By Design" />
     <meta property="og:site_name" content="GFX By Design" />
     <meta property="og:locale" content="en_US" />
-
-    <!-- Redes sociales asociadas -->
-    <meta property="og:see_also" content="https://www.facebook.com/profile.php?id=61553946382173" />
+    <meta property="og:see_also" content="https://www.facebook.com/gfxbydesign" />
     <meta property="og:see_also" content="https://www.instagram.com/gfxbydesign/" />
 
     <!-- Twitter Cards -->
@@ -32,7 +36,7 @@
     <meta name="twitter:image" content="/images/preview.jpg" />
     <meta name="twitter:image:alt" content="Preview of GFX By Design" />
 
-  <!-- Favicon -->
+    <!-- Favicon -->
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
     <link rel="icon" sizes="16x16" href="/images/favicon-16x16.png" />
     <link rel="icon" sizes="32x32" href="/images/favicon-32x32.png" />
@@ -49,6 +53,29 @@
 
     <!-- Estilos principales -->
     <link rel="stylesheet" href="/src/styles.css" />
+
+    <!-- Datos estructurados (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "GFX By Design",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1234 Your Street",
+        "addressLocality": "Washington",
+        "addressRegion": "DC",
+        "postalCode": "20001",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-571-839-8805",
+      "url": "https://gfxbydesign.com",
+      "sameAs": [
+        "https://www.facebook.com/gfxbydesign",
+        "https://www.instagram.com/gfxbydesign"
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
