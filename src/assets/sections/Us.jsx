@@ -3,11 +3,11 @@ import "../styles/Us.css";
 import MarcoDiv from "../component/MarcoDiv";
 import video1 from '../VideosGfx/vid1c.mp4';
 import video2 from '../VideosGfx/vid2c.mp4';
-
+ 
 function Us() {
   return (
     <section id="Us">
-      <div className="Us-container center height-general M-top">
+      <div className="Us-container center height-general M-top .height-general-2">
         <div className="Us-container-Text">
           <h2>Us</h2>
           <div className="Us-Titles">
