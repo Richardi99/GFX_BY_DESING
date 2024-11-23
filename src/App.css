@@ -12,9 +12,12 @@ html, body {
   scroll-behavior: smooth;
   scroll-padding-top: 150px; /* Ajusta esto al valor de la altura de tu navbar */
 }
-
+ 
 .height-general {
   height: 85vh;
+}
+.height-general-2 {
+  min-height: 85vh;
 }
 .height-general-portfolio {
   min-height: 85vh;

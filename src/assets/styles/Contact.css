@@ -64,7 +64,7 @@
 }
 
 #Contact form  input:not(:placeholder-shown),#Contact form textarea:not(:placeholder-shown) {
-  color: #fff; 
+  color: #fff;
 }
 
 .Contact-square article {
@@ -99,7 +99,7 @@
 #Contact form h5 {
   color: #FFF;
   font-family: var(--fontRaleway);
-  font-size: 20px;  
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -148,7 +148,7 @@
 
 #Contact .Contact-write input, textarea{
   box-sizing: border-box;
-}  
+}
 
 .Contact-write .writ1 input {
   border-radius: 7px;
@@ -175,7 +175,7 @@
   font-weight: var(--fontRadio);
   display: flex;
   gap: 10px;
-  
+
 }
 
 .Contact-write .writ2 .form-terminos input{
@@ -212,7 +212,7 @@
 }
 
 #Contact form  input:not(:placeholder-shown),#Contact form textarea:not(:placeholder-shown) {
-  color: #fff; 
+  color: #fff;
 }
 
 #Contact form input:focus {
@@ -257,6 +257,31 @@
 }
 
 
+/* ----APROBADOS ------------ */
+
+/* #Primer {
+  display: none;  
+}
+
+#Us {
+  display: none; 
+}
+
+#Service {
+  display: none; 
+}
+
+#Portfolio {
+  display: none;  
+}
+
+
+#Contact {
+  display: none;  
+}
+
+ */
+
 /* ---------------- */
 @media screen and (max-width: 1300px) {
 
@@ -279,7 +304,6 @@
   #Contact.Contact-write .writ2 .form-terminos input{
     background-color: #131313;
     padding: 0;
-    width: 30;
     padding: 0;
   }
 
@@ -292,17 +316,84 @@
 }
 
 @media screen and (max-width: 1080px) {
+  .Contact-square article {
+    max-width: 160px;
+    height: 50px;
+    font-size: clamp(1.5rem, 2vh,1.9rem);
+  }
+
+  #Contact .Contact-write {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  #Contact .Contact-write .writ1 {
+    gap: 20px;
+    width: 100%;
+  }
+
+  #Contact .Contact-write .writ1 input{
+    width: 100%;
+  }
+
+  #Contact .Contact-write .writ2 textarea{
+    width: 100%;
+  }
 
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
+  .Contact-square {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  #Contact .Contact-container-details form .form-terminos {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 520px) {
+  #Contact form {
+    min-width: 100px;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    max-width: none; /* Evita limitaciones por max-width */
+  }
+  #Contact .Contact-write .writ1 input,
+  #Contact .Contact-write .writ2 textarea {
+    width: 100%; /* Asegura que se adapte al contenedor */
+  }
+
+  #Contact .Contact-container-details form .form-terminos {
+    width: 100%;
+  }
 
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
+#Contact form {
+  width: 100%;
+}
+
+#Contact .Contact-write .writ1 input{
+
+  width: 100%;
+}
+
+#Contact .Contact-write .writ2 textarea{
+  width: 100%;
+}
+
+.Contact-square {
+  grid-template-columns: repeat(1, 1fr);
+}
+.Contact-square article {
+  max-width: 200px;
+  height: 100px;
+  font-size: clamp(1.7rem, 2vh,2rem);
+}
+
+#Contact .Contact-container-details form .form-terminos {
+  width: 100%;
+}
 
 }
 
