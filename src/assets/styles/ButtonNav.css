@@ -1,5 +1,5 @@
 .ButtonNavMenu {
-  display: flex; 
+  display: none; /* El botón está oculto por defecto */
   flex-direction: column;
   width: 3rem;
   height: 3rem;
@@ -7,12 +7,11 @@
   background: transparent;
   gap: .65rem;
   cursor: pointer;
-  display: none;
   -webkit-tap-highlight-color: transparent;
 }
 
 .ButtonNavMenu div {
-  background-color: black;
+  background-color:#131313; /* Color inicial de las barras */
   height: 2px;
   width: 100%;
   border-radius: 5px;
@@ -20,13 +19,27 @@
   transform-origin: left;
 }
 
+/* Cambiar el color de las barras a blanco cuando el botón está activo */
+.ButtonNavMenu.active div {
+  background-color: white; /* Las barras se vuelven blancas cuando está activo */
+}
+
 /* Estilos para el estado activo */
 .ButtonNavMenu.active div:first-child {
   transform: rotate(45deg);
 }
+
 .ButtonNavMenu.active div:nth-child(2) {
   opacity: 0;
 }
+
 .ButtonNavMenu.active div:last-child {
   transform: rotate(-45deg);
+}
+
+/* Mostrar el botón solo en pantallas pequeñas (menos de 1200px) */
+@media (max-width: 1200px) {
+  .ButtonNavMenu {
+    display: flex; /* Mostrar el botón */
+  }
 }

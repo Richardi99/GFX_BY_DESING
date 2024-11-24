@@ -10,6 +10,7 @@ header {
   top: 0;
   transition: all 0.25s ease; /* Transición general */
   z-index: 100;
+  padding: 0 5rem;
 }
 
 .header-nav2 {
@@ -29,12 +30,12 @@ header .header-logo img{
   z-index: 1000;
 }
 
-header nav ul{
+header .header-nav ul{
   display: flex;
   list-style: none;
 }
 
-header nav ul a {
+header .header-nav ul a {
   font-size: clamp(1.3rem, 1.4vw, 1.7rem);
   text-decoration: none;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -50,7 +51,7 @@ header nav ul a {
 }
 
 /* Subrayado */
-header nav ul a::after {
+header .header-nav ul a::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -63,15 +64,15 @@ header nav ul a::after {
 }
 
 /* Mostrar subrayado en hover o si está activo */
-header nav ul a:hover::after,
-header nav ul a.active::after {
+header .header-nav ul a:hover::after,
+header .header-nav ul a.active::after {
   transform: translateX(-50%) scaleX(1); /* Animación de subrayado */
   width: 100%; /* Expande el subrayado solo al tamaño del texto */
   background-color: var(--color-celeste);
 }
 
 /* Estilos para el quinto enlace */
-header nav ul li:nth-child(5) a {
+header .header-nav ul li:nth-child(5) a {
   color: white;
   font-weight: bold;
   background-color: #131313;
@@ -83,7 +84,7 @@ header nav ul li:nth-child(5) a {
   margin-right: 0;
 }
 
-header nav ul li:nth-child(5) a::after {
+header .header-nav ul li:nth-child(5) a::after {
   /* Eliminamos el subrayado */
   content: none; /* Esto desactiva el pseudoelemento ::after para el quinto enlace */
 }
@@ -109,7 +110,7 @@ header.scrolled .header-logo img {
   transition: transform 0.3s ease, max-width 0.3s ease; /* Asegura que el logo tenga transición fluida */
 }
 
-header.scrolled nav ul a {
+header.scrolled .header-nav ul a {
   font-size: clamp(1.2rem, 1.2vw, 1.7rem);
   padding: 8px 0;
   transition: font-size 0.3s ease, padding 0.3s ease;
@@ -118,4 +119,94 @@ header.scrolled nav ul a {
 /* Añadir will-change para optimizar el rendimiento */
 header.scrolled, header.scrolled .header-logo img {
   will-change: transform, max-width, background-color, backdrop-filter;
+}
+
+
+/* Estilos específicos de header-nav2 */
+@media screen and (max-width: 1200px) {
+  /* Si .header-nav2 está activo */
+  .header.nav-padding {
+    padding: 0 5rem; /* Aquí modificas el padding del header */
+  }
+  .header-nav2 {
+    display: none;
+  }
+
+  .header-nav2.activo {
+    display: flex;
+    background-color: #3f1b06;
+    top: 0;
+    right: 0;
+    width: 50%;
+    position: fixed;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .header-nav2.activo ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .ButtonNavMenu {
+    color: white;
+    z-index: 100;
+  }
+  .ButtonNavMenu div {
+    background-color: rgb(215, 210, 210);
+  }
+  
+  .header-nav2.activo ul a{
+    font-size: clamp(2rem,3vh,3rem);
+    padding: 20px;
+    right: -100%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 20000;
+  }
+
+}
+
+  @media (max-width: 750px) {
+  .header-nav2 {
+      right: 0; /* Muestra el menú */
+    }
+    .header-nav2.activo {
+      width: 100%;
+    }
+    .header.nav-padding {
+      padding: 0 1.5rem; /* Aquí modificas el padding del header */
+    }
+
+    .header {
+      padding: 0 1.5rem; /* Aquí modificas el padding del header */
+    }
+  
+}
+
+  @media (max-width: 520px) {
+    .header-nav2 ul li a {
+      font-size: 1.2rem; /* Reduce el tamaño de la fuente */
+    }
+
+
+ }
+
+  @media (max-width: 450px) {
+    .header-nav2 ul li a {
+      font-size: 1rem; /* Aún más pequeño en resoluciones bajas */
+    }
+
+
 }
