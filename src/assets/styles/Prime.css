@@ -299,7 +299,7 @@ h1 .h1-span2 {
   align-items: center;
   font-family: var(--fontRadio);
   color: white;
-  width: 250px;
+  width: 300px;
   align-self: flex-start;
   margin-left: 30px;
 }
@@ -470,6 +470,7 @@ h1 .h1-span2 {
   #Primer form .form-terminos {
     margin-left: 5%;
     font-size: 0.9rem;
+    width: 260px;
   }
 }
 
@@ -497,6 +498,8 @@ h1 .h1-span2 {
     font-size: 1.2rem;
 
   }
+
+  
 
 
  
