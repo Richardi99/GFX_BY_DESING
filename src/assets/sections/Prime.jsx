@@ -56,7 +56,7 @@ function Prime() {
             <h2>
               Welcome to GFX by Design!<br className="br1"/>
               <span>
-                Specialists in bringing your creative vision to life. <br />
+                Specialists in bringing your creative vision to life. <br className="br2"/>
                 Our team of experts offers a full range of services
               </span>
             </h2>

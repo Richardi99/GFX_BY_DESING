@@ -383,7 +383,7 @@ h1 .h1-span2 {
     text-align: center;
   }
   #Primer .Prime-building h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     
   }
 
@@ -439,9 +439,10 @@ h1 .h1-span2 {
   #Primer h1 br {
     display: none; /* Oculta el salto de línea generado por <br /> */
   }
-  #Primer h2 .br1{
+  #Primer h2 .br2{
     display: none; /* Oculta el salto de línea generado por <br /> */
   }
+
 
   #Primer .animate {
     display: block;
@@ -491,6 +492,8 @@ h1 .h1-span2 {
     font-size: 3.5rem;
     line-height: 1.2;
   }
+
+
 
   
   #Primer .Prime-building .PrimeText3 {
