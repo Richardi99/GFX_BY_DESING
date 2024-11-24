@@ -31,7 +31,7 @@
   font-family: var(--fontRaleway);
   font-size: 22px;
   font-style: normal;
-  max-width: 330px;
+  max-width: 350px;
   text-align: center;
   font-weight: 500;
   line-height: normal;
@@ -43,9 +43,10 @@
 
 .Us-container-Videos {
   display: flex;
+
 }
 .Us-container-Videos .Us-container-Img-video1{
-  margin-right: 6rem;
+  display: block;
 }
 
 

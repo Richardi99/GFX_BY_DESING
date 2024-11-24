@@ -45,7 +45,7 @@ function Header() {
       <nav className="header-nav">
         <ul>
           <li><a href="#" onClick={() => setNavActive(false)}>Home</a></li>
-          <li><a href="#Us" onClick={() => setNavActive(false)}>Us</a></li>
+          <li><a href="#Us" onClick={() => setNavActive(false)}>About Us</a></li>
           <li><a href="#Service" onClick={() => setNavActive(false)}>Services</a></li>
           <li><a href="#portfolio" onClick={() => setNavActive(false)}>Portfolio</a></li>
           <li><a href="#contact" onClick={() => setNavActive(false)}>Drop me a message!</a></li>
@@ -56,7 +56,7 @@ function Header() {
       <nav className={`header-nav2 ${navActive ? 'activo' : ''}`}>
         <ul>
           <li><a href="#" onClick={() => setNavActive(false)}>Home</a></li>
-          <li><a href="#Us" onClick={() => setNavActive(false)}>Us</a></li>
+          <li><a href="#Us" onClick={() => setNavActive(false)}>About Us</a></li>
           <li><a href="#Service" onClick={() => setNavActive(false)}>Services</a></li>
           <li><a href="#portfolio" onClick={() => setNavActive(false)}>Portfolio</a></li>
           <li><a href="#contact" onClick={() => setNavActive(false)}>Drop me a message!</a></li>

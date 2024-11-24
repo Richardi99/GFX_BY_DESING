@@ -9,7 +9,7 @@ function Us() {
     <section id="Us">
       <div className="Us-container center height-general M-top .height-general-2">
         <div className="Us-container-Text">
-          <h2>Us</h2>
+          <h2>About Us</h2>
           <div className="Us-Titles">
             Creative - Innovation - Impactful
             </div>
