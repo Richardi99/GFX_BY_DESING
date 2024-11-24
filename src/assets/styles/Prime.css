@@ -443,7 +443,9 @@ h1 .h1-span2 {
     display: none; /* Oculta el salto de línea generado por <br /> */
   }
 
-
+/*   #Us{
+    display: none;
+  } */
   #Primer .animate {
     display: block;
     margin: auto;

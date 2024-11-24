@@ -46,7 +46,7 @@ function Us() {
             <div className="Us-container-Img-video1 videx2">
               <MarcoDiv>
                   <video 
-                  className="vid-c1" 
+                  className="vid-c2" 
                   src= {video2}
                   autoPlay muted loop>
                   </video>

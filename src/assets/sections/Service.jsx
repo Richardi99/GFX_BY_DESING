@@ -13,7 +13,7 @@ import piano from '../img/diseños/piano.png'
 function Service() {
   return (
     <section id="Service">
-      <div className="Service-container center center height-general M-top">
+      <div className="Service-container center center height-general M-topx">
           <h2>Services</h2>
         <div className="Cards">
           <div className="Service-Card">
