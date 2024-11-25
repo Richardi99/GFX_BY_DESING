@@ -1,32 +1,107 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+
 import "../styles/Contact.css";
 import MarcoDiv from "../component/MarcoDiv";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
+
+  const form = useRef();
+  const buttonRef = useRef(null); // Referencia para el botón
+  const [toastMessage, setToastMessage] = useState(""); // Estado para manejar los mensajes tipo "toast"
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    // Validar que el checkbox esté marcado
+    const checkbox = form.current.querySelector(".checkbox");
+    if (!checkbox.checked) {
+      setToastMessage("Please accept the terms and conditions.");
+      setTimeout(() => setToastMessage(""), 2000); // Limpia el mensaje tras 2 segundos
+      return;
+    }
+
+    // Cambiar el texto del botón a "Enviando..."
+    if (buttonRef.current) {
+      buttonRef.current.innerText = "Sending...";
+    }
+
+    // Capturar el valor del campo "Number" y agregarlo al mensaje
+    const numberField = form.current.querySelector('input[name="user_number"]');
+    const numberValue = numberField ? numberField.value : "";
+    const messageField = form.current.querySelector('textarea[name="message"]');
+    if (messageField && numberValue) {
+      const transparentMessage = `\n\n(Númber: ${numberValue})`;
+      messageField.value += transparentMessage; // Se agrega como parte del mensaje
+    }
+
+    emailjs
+      .sendForm(
+        "service_22wfuvp",
+        "template_76zcn1k",
+        form.current,
+        "X6KY1HKx7BLzZyFDB"
+      )
+      .then(
+        (result) => {
+          setToastMessage("¡Email sent successfully!");
+          setTimeout(() => setToastMessage(""), 2000); // Limpia el mensaje tras 2 segundos
+
+          console.log("Email sent successfully: ", result.text);
+
+          // Restablecer el texto del botón y limpiar el formulario
+          if (buttonRef.current) {
+            buttonRef.current.innerText = "Send";
+          }
+          form.current.reset(); // Limpiar el formulario
+        },
+        (error) => {
+          setToastMessage("Error sending email. Try again.");
+          setTimeout(() => setToastMessage(""), 2000); // Limpia el mensaje tras 2 segundos
+
+          console.log("Failure to send Email: ", error.text);
+
+          // Restablecer el texto del botón en caso de error
+          if (buttonRef.current) {
+            buttonRef.current.innerText = "Send";
+          }
+        }
+      );
+  };
+
+
+
+
   return (
     <section id="Contact">
       <div className="Contact-container center height-general-contact M-top">
         <h2>Contact Us</h2>
         <div className="Contact-container-details">
-          <form className="form-contact">
+          <form  ref={form} className="form-contact"  onSubmit={sendEmail} >
             <h5>We are excited about new challenges !</h5>
             <h6>Let's schedule a meeting!</h6>
             <div className="Contact-write">
               <div className="writ1">
-                <input type="text" placeholder="Name" />
-                <input type="text" placeholder="Number" />
-                <input type="email" placeholder="Email" />
+                <input type="text" name="from_name" placeholder="Name" required/>
+                <input type="number" name="email_id" placeholder="Number" required />
+                <input type="email" name="user_number" placeholder="Email"  required/>
               </div>
               <div className="writ2">
-                <textarea type="text" placeholder="Message" />
+                <textarea type="text" name="message" placeholder="Message"  required/>
                 <div className="form-terminos">
                   <input className="checkbox" type="checkbox" required /> I
                   accept the terms and conditions
                 </div>
-                <button>Send</button>
+                <button type="submit" id="button" ref={buttonRef} >Send</button>
               </div>
             </div>
           </form>
+
+          {toastMessage && (
+          <div className="toast">
+            {toastMessage}
+          </div>
+          )}
 
           <div className="Contact-square">
             <a href="https://www.instagram.com/gfxbydesign/" target="_blank">

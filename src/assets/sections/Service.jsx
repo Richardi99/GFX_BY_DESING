@@ -51,9 +51,8 @@ function Service() {
                 <div className="first-content-text">
                   <h3>PRINTING</h3>
                   <p>
-                    Brands are everwhere, even when we can’t see them. We build
-                    lasting brands that convey emotions and values that are
-                    right for all audiences.
+                  We bring ideas to life with impeccable quality. From stunning prints
+                   to tailored finishes, we ensure every piece communicates excellence
                   </p>
                 </div>
               </div>
@@ -77,10 +76,9 @@ function Service() {
                 <div className="first-content-text">
                   <h3>GRAPHICS DESIGN</h3>
                   <p>
-                    Brands are everwhere, even when we can’t see them. We build
-                    lasting brands that convey emotions and values that are
-                    right for all audiences.
-                  </p>
+                  Design that speaks volumes. We craft visuals that captivate, inspire, and
+                   leave a lasting impression, perfectly tailored to your brand.
+                   </p>
                 </div>
               </div>
 
