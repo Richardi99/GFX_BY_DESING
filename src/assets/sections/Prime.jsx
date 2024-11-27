@@ -67,7 +67,7 @@ const Prime = () => {
   };
 
   const [wordIndex, setWordIndex] = useState(0); // Índice de la palabra actual
-  const words = ["IMPACT", "LEGACY", "CHANGE"]; // Palabras rotativas
+  const words = ["IMPACT", "IMPACT", "IMPACT"]; // Palabras rotativas
 
   useEffect(() => {
     // Animación inicial para Prime-building y formulario
@@ -108,7 +108,7 @@ const Prime = () => {
       <div className="Prime-container center">
         <div className="Prime-building">
           <h1>
-            <span className="h1-span">DESIGN</span> that make an <br />{" "}
+            <span className="h1-span">DESIGNS</span> that make an <br />{" "}
             <span
               className="h1-span2 animate"
               style={{ "--steps": currentWord.length }}
@@ -128,13 +128,13 @@ const Prime = () => {
             </h2>
           </div>
           <div className="PrimeText3">
-            <span className="span1">Branding Design</span>
+            <span className="span1">Branding</span>
+            <strong> </strong>
+            <span className="span3">Printing</span>
             <strong> </strong>
             <span className="span2">Logo Design</span>
             <strong> </strong>
-            <span className="span3">Printing Solutions</span>
-            <strong> </strong>
-            <span className="span4">Branding Strategies</span>
+            <span className="span4">Web Designs</span>
           </div>
         </div>
 
@@ -142,7 +142,7 @@ const Prime = () => {
           <h3>Contact Us</h3>
           <input type="text" name="from_name" placeholder="Name" required />
           <input type="email" name="email_id" placeholder="Email" required />
-          <input type="text" name="user_number" placeholder="Number" pattern="[0-9]+" title="Please enter a valid number." required/>
+          <input type="text" name="user_number" placeholder="Number (Optional)" pattern="[0-9]+" title="Please enter a valid number." />
           <textarea type="text" name="message" placeholder="Message" required/>
           <div className="form-terminos">
             <input className="checkbox" type="checkbox" required/> I accept the terms and

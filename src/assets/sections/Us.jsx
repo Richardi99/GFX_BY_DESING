@@ -11,16 +11,19 @@ function Us() {
         <div className="Us-container-Text">
           <h2>About Us</h2>
           <div className="Us-Titles">
-            Creative - Innovation - Impactful
+            Creative - Innovate - Impactful
             </div>
           <div className="Us-text">
             <p>
-            We are thrilled to announce our partnership with Byrtec Solutions, 
-            allowing us to now provide comprehensive website development.
-            Whether you need a striking logo, <strong>impactful</strong>  branding, 
-            or a user-friendly website, we are here to help you stand out in the digital world.
-             Let's create something amazing together in the heart of 
-             <strong>Washington DC</strong>  to the world.
+            Located in the vibrant DMV area, GFX by Design specializes in bringing your 
+            <strong> creative</strong>  vision to life.
+            Our expert team offers a full range of services, including: <br />
+            <li> Graphic design</li>
+            <li>Logo design</li>
+            <li>Printing</li>
+            <li>Branding</li>
+            We are thrilled to announce our partnership with Byrtec Solutions, allowing us to now provide comprehensive website development.
+            Whether you need a striking logo, <strong> impactful</strong> branding, or a user-friendly website, we are here to help you stand out in the digital world. Let's create something amazing together in the heart of Washington DC to the world.
 
              {/*  Our <strong>Washington DC</strong> - based team of marketers,
               creatives, designers, developers, communicators, and engineers

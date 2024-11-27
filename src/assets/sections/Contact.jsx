@@ -83,8 +83,8 @@ function Contact() {
             <div className="Contact-write">
               <div className="writ1">
                 <input type="text" name="from_name" placeholder="Name" required/>
-                <input type="number" name="email_id" placeholder="Number" required />
-                <input type="email" name="user_number" placeholder="Email"  required/>
+                <input type="text" name="user_number" placeholder="Number (Optional)"/>
+                <input type="email" name="email_id" placeholder="Email"  required/>
               </div>
               <div className="writ2">
                 <textarea type="text" name="message" placeholder="Message"  required/>
