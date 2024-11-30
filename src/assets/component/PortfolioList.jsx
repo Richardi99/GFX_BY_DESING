@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import MarcoDiv from './MarcoDiv';
+import React, { lazy, Suspense, useState, useEffect } from 'react';
+// Lazy loading para MarcoDiv
+const MarcoDiv = lazy(() => import('./MarcoDiv'));
 import '../styles/Portfolio-item.css';
 
 function PortfolioList({ products, visibleProducts }) {
@@ -8,7 +9,6 @@ function PortfolioList({ products, visibleProducts }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1080);
 
   useEffect(() => {
-    // Listener para manejar el cambio de tamaño de ventana
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 1080);
     };
@@ -30,7 +30,6 @@ function PortfolioList({ products, visibleProducts }) {
   const handleMouseEnter = () => setIsHovered(true);
   const handleMouseLeave = () => setIsHovered(false);
 
-  // Función para manejar el clic y desplazar a la sección de contacto
   const handleClick = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
@@ -44,15 +43,18 @@ function PortfolioList({ products, visibleProducts }) {
         <div
           key={product.id}
           className="Portfolio-item"
-          onMouseMove={!isMobile ? handleMouseMove : null} // Desactiva el movimiento si es móvil
+          onMouseMove={!isMobile ? handleMouseMove : null}
           onMouseEnter={!isMobile ? handleMouseEnter : null}
           onMouseLeave={!isMobile ? handleMouseLeave : null}
-          onClick={handleClick} // Agrega el evento de clic
+          onClick={handleClick}
         >
-          <MarcoDiv>
-            <div className="barr"></div>
-            <img src={product.image} alt="producto1" />
-          </MarcoDiv>
+          {/* Suspense envuelve el componente lazy */}
+          <Suspense fallback={<div>Loading...</div>}>
+            <MarcoDiv>
+              <div className="barr"></div>
+              <img src={product.image} alt="producto1" />
+            </MarcoDiv>
+          </Suspense>
 
           {isHovered && !isMobile && (
             <div
