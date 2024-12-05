@@ -341,7 +341,7 @@
     height: auto; /* Ajusta la altura automáticamente al contenido */
   }
   .M-topx {
-    margin-top: 250px
+    margin-top: 450px
   }
 
   
@@ -362,11 +362,17 @@
   .first-content-text p {
     font-size: 1rem;
   }
+
+  .M-topx {
+    margin-top: 300px
+  }
+
 }
 
 @media screen and (max-width: 520px) {
-
-
+  .M-topx {
+    margin-top: 200px
+  }
 }
 
 @media screen and (max-width: 420px) {
