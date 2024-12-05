@@ -201,9 +201,10 @@
    }
 
   .Us-container-Img-video1.videx2 {
-    height: 300px;
-    max-width:  150px;
+    height: 200px;
+    max-width:  140px;
     top: 20px;
+    margin-top: 0;
     
   } 
   .Us-container-Img-video1 .MarcoDiv-body {
