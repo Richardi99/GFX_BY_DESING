@@ -366,6 +366,14 @@
   .M-topx {
     margin-top: 300px
   }
+  
+}
+
+@media screen and (max-width: 599px) {
+  
+    .M-topx {
+      margin-top: 350px
+    }
 
 }
 
