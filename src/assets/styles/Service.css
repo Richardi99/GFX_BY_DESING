@@ -370,7 +370,9 @@
 }
 
 @media screen and (max-width: 420px) {
-
+  .M-topx {
+    margin-top: 300px;
+  }
 }
 
 
