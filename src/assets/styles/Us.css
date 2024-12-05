@@ -74,6 +74,11 @@
   height: auto;
   object-fit: cover;
 }
+.Us-container-Img-video1 .MarcoDiv-body .vid-c2{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
 
 .Us-container-Img-video1.videx1 {
@@ -148,26 +153,32 @@
 
   
   .Us-container-Videos {
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     align-items: center;
-    margin: 0;
-    width: 100%;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
-
+  
   .Us-container-Text .Us-Titles {
     font-size: 1.2rem;
-   }
-
-   .Us-container-Img-video1.videx1{
-    height: 300px;
-    width: 190px;
-    top: 20px;
   }
-
-  .Us-container-Img-video1.videx2 {
+  
+  .Us-container-Img-video1.videx1{
+    box-sizing: border-box;
     height: 350px;
-    width: 190px;
+    width: 150px;
+    top: 20px;
+    
+    
+  }
+  
+  .Us-container-Img-video1.videx2 {
+    box-sizing: border-box;
+    height: 350px;
+    width: 180px;
     top: 20px;
     
   } 
