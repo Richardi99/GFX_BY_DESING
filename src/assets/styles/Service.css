@@ -38,7 +38,7 @@
 
 /* From Uiverse.io by suleymanlaarabidev */ 
 .Service-Card {
-  width: 300px;
+  width: 290px;
   height: 450px;
   transition: all 0.25s ease-in-out;
   border-radius: 10px;
@@ -341,7 +341,7 @@
     height: auto; /* Ajusta la altura automáticamente al contenido */
   }
   .M-topx {
-    margin-top: 450px
+    margin-top: 150px
   }
 
   
@@ -364,28 +364,22 @@
   }
 
   .M-topx {
-    margin-top: 300px
+    margin-top: 150px
   }
   
 }
 
-@media screen and (max-width: 650px) {
-  
-    .M-topx {
-      margin-top: 350px
-    }
 
-}
 
 @media screen and (max-width: 520px) {
   .M-topx {
-    margin-top: 200px
+    margin-top: 130px
   }
 }
 
 @media screen and (max-width: 420px) {
   .M-topx {
-    margin-top: 450px;
+    margin-top: 250px;
   }
 }
 

@@ -152,7 +152,7 @@
     text-align: center;
     align-items: center;
     margin: 0;
-    width: 300px;
+    width: 100%;
   }
 
   .Us-container-Text .Us-Titles {
@@ -160,8 +160,8 @@
    }
 
    .Us-container-Img-video1.videx1{
-    height: 30px;
-    width: 180px;
+    height: 300px;
+    width: 190px;
     top: 20px;
   }
 
@@ -201,8 +201,8 @@
    }
 
   .Us-container-Img-video1.videx2 {
-    height: 200px;
-    max-width:  140px;
+    height: 300px;
+    max-width:  150px;
     top: 20px;
     margin-top: 0;
     
@@ -213,11 +213,11 @@
   }
 
   .Us-container-Img-video1 .MarcoDiv-body .vid-c1 {
-    height: 280px;
+    height: 300px;
   }
 
   .Us-container-Img-video1 .MarcoDiv-body .vid-c2 {
-    height: 260px;
+    height: 350px;
   }
 
 

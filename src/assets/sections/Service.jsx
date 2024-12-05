@@ -109,7 +109,7 @@ function Service() {
 
               <div className="second-content">
                 <div className="first-content-text2">
-                <h3>GRAPHICS DESIGN</h3>
+                <h3>WEB DESIGNS</h3>
                   <div className="second-content-imgs">
                     <img src={WebDesign} alt="Imagen 1"/>
                     <img src={WebDesign2} alt="Imagen 2"/>
