@@ -7,6 +7,7 @@ function PortfolioList({ products, visibleProducts }) {
   const [circlePosition, setCirclePosition] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1080);
+  const [modalData, setModalData] = useState({ isOpen: false, media: '', isVideo: false });
 
   useEffect(() => {
     const handleResize = () => {
@@ -30,11 +31,12 @@ function PortfolioList({ products, visibleProducts }) {
   const handleMouseEnter = () => setIsHovered(true);
   const handleMouseLeave = () => setIsHovered(false);
 
-  const handleClick = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleClick = (media, isVideo) => {
+    setModalData({ isOpen: true, media, isVideo });
+  };
+
+  const closeModal = () => {
+    setModalData({ isOpen: false, media: '', isVideo: false });
   };
 
   return (
@@ -46,13 +48,16 @@ function PortfolioList({ products, visibleProducts }) {
           onMouseMove={!isMobile ? handleMouseMove : null}
           onMouseEnter={!isMobile ? handleMouseEnter : null}
           onMouseLeave={!isMobile ? handleMouseLeave : null}
-          onClick={handleClick}
+          onClick={() => handleClick(product.image, product.image.endsWith('.mp4'))}
         >
-          {/* Suspense envuelve el componente lazy */}
           <Suspense fallback={<div>Loading...</div>}>
             <MarcoDiv>
               <div className="barr"></div>
-              <img src={product.image} alt="producto1" />
+              {product.image.endsWith('.mp4') ? (
+                <video src={product.image} alt={product.alt} autoPlay loop muted />
+              ) : (
+                <img src={product.image} alt={product.alt} />
+              )}
             </MarcoDiv>
           </Suspense>
 
@@ -69,6 +74,22 @@ function PortfolioList({ products, visibleProducts }) {
           )}
         </div>
       ))}
+
+      {/* Modal */}
+      {modalData.isOpen && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <button className="modal-close" onClick={closeModal}>
+              &times;
+            </button>
+            {modalData.isVideo ? (
+              <video src={modalData.media} controls autoPlay loop />
+            ) : (
+              <img src={modalData.media} alt="Modal product" />
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

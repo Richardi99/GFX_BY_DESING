@@ -38,7 +38,7 @@
 
 /* From Uiverse.io by suleymanlaarabidev */ 
 .Service-Card {
-  width: 350px;
+  width: 300px;
   height: 450px;
   transition: all 0.25s ease-in-out;
   border-radius: 10px;
@@ -105,6 +105,12 @@
   background: #F2B705;
 }
 
+.Service-Card:nth-child(4):hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  background: #633215;
+}
+
 /* First content (front side) */
 .first-content {
   height: 407px;
@@ -150,6 +156,9 @@
   color: white;
 
 }
+.first-content-text p {
+  height: 200px;
+}
 
 .Service-Card:hover .second-content {
   opacity: 1;
@@ -178,7 +187,7 @@
 .first-content-text h3 {
   color: #000;
   font-family: var(--fontPoppins);
-  font-size: 26px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 600;
   margin: 0;
@@ -293,6 +302,22 @@
     width: auto;
   }
 .Service-Card:nth-child(3) .second-content .second-content-imgs img{
+    width: 270px;
+  }
+
+.Service-Card:nth-child(4) .first-content-text2 h3{
+
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+.Service-Card:nth-child(4) .second-content .second-content-imgs{
+    display: grid;
+    grid-template-columns: 1fr; /* 2 columnas de igual tamaño */
+    gap: 8px; /* Espacio entre las imágenes */
+    width: auto;
+  }
+.Service-Card:nth-child(4) .second-content .second-content-imgs img{
     width: 270px;
   }
 

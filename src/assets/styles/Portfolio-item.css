@@ -138,6 +138,15 @@
   color: #fff;
 }
 
+.Portfolio-all .MarcoDiv .MarcoDiv-body video {
+  width: 100%; /* Ocupa el ancho completo del contenedor */
+  max-height: 250px; /* Ajusta la altura máxima según el marco */
+  object-fit: cover; /* Recorta el video si es necesario para ajustarse al marco */
+  border-radius: 0 0 8px 8px; /* Bordes redondeados */
+  overflow: hidden; /* Evita que el contenido sobresalga */
+  display: block; /* Asegura que se comporte como un bloque */
+}
+
 
 
 .Portfolio-all .MarcoDiv .MarcoDiv-body img {

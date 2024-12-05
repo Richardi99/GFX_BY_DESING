@@ -15,6 +15,67 @@ border-bottom: 4px solid #0B7678;
   text-align: center;
 }
 
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+.modal-content video {
+  max-width: 100%; /* El video no excederá el ancho del contenedor */
+  max-height: 80vh; /* Limita la altura del video al 80% de la altura de la ventana */
+  object-fit: contain; /* Ajusta el contenido para que se mantenga completo dentro del marco */
+  border-radius: 8px; /* Opcional: Bordes redondeados */
+  display: block; /* Asegura un comportamiento como bloque */
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 64px;
+  background-color: #251207;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.modal-close:hover {
+  color: rgb(255, 255, 255);
+  background-color: #0b7678;
+  cursor: pointer;
+}
+
+
 @media screen and (min-width: 751px) and (max-width: 1200px) {
 
   #Portfolio .Portfolio-item {
