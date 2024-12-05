@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Portfolio.css';
 
 function PortfolioFilters({ selectedCategory, onSelectCategory }) {
-  const categories = ['All', 'Graphics', 'Printing', 'Car Wraps', 'Bussiness card', 'Others'];
+  const categories = ['All', 'Graphics', 'Printing', 'Car Wraps', 'Business card', 'Others'];
 
   return (
     <div className="Portfolio-class">
