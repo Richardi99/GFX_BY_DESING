@@ -1,6 +1,0 @@
-# Permitir que todos los motores de búsqueda rastreen todo el sitio
-User-agent: *
-Disallow:
-
-# Indicar la ubicación del sitemap
-Sitemap: https://gfxbydesign.com/sitemap.xml

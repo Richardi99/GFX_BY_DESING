@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/         # Bloquea áreas internas que no deseas indexar
+Disallow: /test/          # Bloquea carpetas de prueba si existen
+Disallow: /private/       # Bloquea carpetas privadas
+
+Sitemap: https://gfxbydesign.com/sitemap.xml

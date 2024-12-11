@@ -8,3 +8,9 @@ body {
   height: 100vh; /* Asegura que el fondo ocupe toda la altura del viewport */
   width: 100%; /* Asegura que ocupe todo el ancho */
 }
+
+
+.main-containerBODY{
+  max-width: 1400px; /* Limita el ancho máximo a 1400px */
+  margin: 0 auto; /* Centra el contenedor */
+}

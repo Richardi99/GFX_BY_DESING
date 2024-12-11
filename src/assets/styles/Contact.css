@@ -21,6 +21,7 @@
 .Contact-container-details{
   display: flex;
   gap: 50px;
+  justify-content: center;
 }
 
 /* MARCO CONTACT --------------- */

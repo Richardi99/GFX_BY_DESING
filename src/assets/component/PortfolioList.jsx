@@ -56,7 +56,7 @@ function PortfolioList({ products, visibleProducts }) {
               {product.image.endsWith('.mp4') ? (
                 <video src={product.image} alt={product.alt} autoPlay loop muted />
               ) : (
-                <img src={product.image} alt={product.alt} />
+                <img src={product.image} alt={product.alt} loading="lazy" />
               )}
             </MarcoDiv>
           </Suspense>

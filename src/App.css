@@ -1,16 +1,23 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  box-sizing: border-box; 
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px;
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+/* Contenedor principal */
 #App {
   display: grid;
   min-height: 100dvh;
   grid-template-rows: auto 1fr auto;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%; /* Asegura que ocupen toda la altura de la pantalla */
-  box-sizing: border-box; /* Incluye el padding en el tamaño total de los elementos */
-  scroll-behavior: smooth;
-  scroll-padding-top: 150px; /* Ajusta esto al valor de la altura de tu navbar */
+  width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
+  max-width: 1760px; /* Limita el ancho máximo a 1400px */
+  margin: 0 auto; /* Centra el contenedor */
 }
  
 .height-general {

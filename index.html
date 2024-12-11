@@ -6,7 +6,7 @@
     <title>GFX By Design</title>
 
     <!-- SEO básico -->
-    <meta name="description" content="A team of marketers, designers, developers, and strategists delivering innovative solutions in web design, SEO, and digital marketing. We tailor strategies to boost online visibility and achieve measurable results." />
+    <meta name="description" content="Located in the vibrant DMV area, GFX by Design specializes in bringing your creative vision to life. Our expert team offers professional services in graphic design, logo creation, branding, printing, and now website development in collaboration with Byrtec Solutions. Whether you need a stunning logo, impactful branding, or a user-friendly website, we are here to help your business thrive in the digital world. Let’s create something amazing together!" />
     <meta name="keywords" content="graphic design, GFX By Design, professional design, logos, visual identity" />
     <meta name="author" content="GFX By Design" />
     <meta name="robots" content="index, follow" />
@@ -42,14 +42,52 @@
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
     <link rel="manifest" href="images/site.webmanifest" />
 
+    <link rel="canonical" href="https://gfxbydesign.com" />
+
     <!-- Configuración móvil y accesibilidad -->
     <meta name="theme-color" content="#000000" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
+    <!-- Datos estructurados (Schema.org) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "GFX BY DESIGN",
+        "image": "/images/preview.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "9559 Tudor Oaks Drive",
+          "addressLocality": "Manassas",
+          "addressRegion": "Virginia (VA)",
+          "postalCode": "20110",
+          "addressCountry": "US"
+        },
+        "telephone": "+15718398805",
+        "url": "https://gfxbydesign.com",
+        "areaServed": ["US", "CA", "MX", "Worldwide"],
+        "sameAs": [
+          "https://www.facebook.com/gfxbydesign",
+          "https://www.instagram.com/gfxbydesign"
+        ]
+      }
+    </script>
+
     <!-- Estilos principales -->
     <link rel="stylesheet" href="/src/styles.css" />
     </head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F0J0HHNER1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-F0J0HHNER1');
+    </script>
+
     <body>
     <div id="root"></div>
 
